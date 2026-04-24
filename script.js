@@ -76,10 +76,10 @@ quitBtn.addEventListener('click', () =>{
 
 //function to render questions
 const showquestion = (index) => {
-    optionsListContainer.classList.remove('disabled');
-    nextBtn.classList.remove('activeNextBtn');
     handleProgressBar(timer);
     handleTiming(timer);
+    optionsListContainer.classList.remove('disabled');
+    nextBtn.classList.remove('activeNextBtn');
     questionText.innerText = 
     '' + questions?.[index].numb + '. ' + questions?.[index].question;
 
